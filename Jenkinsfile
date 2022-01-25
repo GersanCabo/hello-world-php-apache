@@ -1,5 +1,5 @@
 pipeline {
-    agent { 'php:7.4-cli' }
+    agent { docker { 'php:7.4-cli' } }
     stages {
         stage('build') {
             steps {
